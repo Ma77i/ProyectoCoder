@@ -1,0 +1,72 @@
+.main {
+    display: $flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .main__img {
+        display: $flex;
+        justify-content: center;
+        align-items: center;
+
+        .main__img--imagen {
+            position: relative;
+            margin-top: 3%;
+            width: 87%;
+            border: 1px solid rgb(66, 66, 37);
+            animation: swing 1.2s ease-in-out infinite alternate;
+            -webkit-animation: swing 1.2s ease-in-out infinite alternate;
+            -moz-animation: swing 1.2s ease-in-out infinite alternate;
+            transform-origin: center -80px;
+            max-width: 100%;
+            box-shadow: 0 10px 20px rgba(17, 25, 25, 0.2);
+        }
+    }
+
+    @keyframes swing {
+        from {
+            transform: rotate(-2deg);
+        }
+
+        to {
+            transform: rotate(2deg);
+        }
+    }
+    
+    .parrafo {
+        display: $flex;
+        flex-direction: column;
+        position: fixed;
+        font-family: $fuente-philo;
+        color: $color-secundario;
+        letter-spacing: 3px;
+        font-size: 15px;
+        text-align: $texto-centro;
+        margin-top: 30%;
+
+        .parrafo__cancion {
+            color: $color-secundario;
+            letter-spacing: 3px;
+            font-size: 18px;
+            font-weight: lighter;
+        }
+        .parrafo__play {
+            color: #ffffff;
+        }
+
+        }
+        }
+
+@media only screen and (max-width: 700px) {
+    .main {
+        .main__img {
+            .main__img--imagen {
+                margin-top: 30%;
+            }
+        }
+
+        .parrafo {
+            margin-top: 100%;
+        }
+    }
+}

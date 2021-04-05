@@ -1,0 +1,130 @@
+@import "variables/colores";
+@import "variables/display";
+@import "variables/fuentes";
+@import "variables/texto";
+@import "variables/altoAncho";
+
+@import "secciones/index";
+@import "secciones/discografia";
+@import "secciones/videos";
+@import "secciones/contacto";
+
+@import "mixins";
+
+
+@font-face {
+    font-family: $fuente-kashmir;
+    src: url(kashmir.ttf), format(TrueType);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/**
+.fuentex {
+    font-family: $fuente-kashmir;
+    color: white;
+    text-align: $texto-centro;
+}*/
+
+#estiloH1 {
+    @include fuentex;
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-top: 2vh;
+    -webkit-text-stroke: 1px $color-secundario;
+    color: $color-primario;
+}
+
+body {
+    
+    -webkit-background: $color-primario;
+    -moz-background: $color-primario;
+    background: $color-primario;
+    background-image: url("/imagenes/zeppelinlogo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: $alto-max;
+
+    header {
+        background: $color-primario;
+        display: $flex;
+        justify-content: center;
+    }
+
+    nav {
+        display: $flex;
+        justify-content: center;
+        background: $gradiente-negro-abajo;
+        width: $ancho-max;
+        height: ($alto-max/10)-6;
+        position: sticky;
+        padding-top: 0%;
+
+        ul#botones {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+
+            li {
+                display: $inlineblock;
+            }
+            .botones__nav {
+                @include fuentex;
+                text-shadow: 21px -11px 100px -8px rgba(255, 0, 0, 0.89);
+                background: $gradiente-negro-arriba;
+                text-decoration: none;
+                text-transform: uppercase;
+                border-radius: 10%;
+                padding: 0 15px;
+                border: 1px solid $color-secundario;
+                cursor: pointer;
+                font-size: 22px;
+                line-height: 1em;
+                font-weight: 700;
+                
+                &:hover {
+                    background: $gradiente-blanco-arriba;
+                    color: $color-primario;
+                }
+            }
+        }
+    }
+
+    footer.pie {
+        text-align: $texto-centro;
+        position: fixed;
+        width: $ancho-max;
+        bottom: 0%;
+
+        .pie__redes--link:hover>img {
+            transform: rotate(360deg);
+            transition: all 0.5s;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+    body {
+        background: $color-primario !important;
+
+        #estiloH1 {
+            text-align: $texto-centro;
+            margin-top: 5vh;
+        }
+        nav {
+            ul#botones {
+                .botones__nav {
+                    padding: 2px 10px;
+                    font-size: 1.25rem;
+                }
+            }
+        }
+    }
+}

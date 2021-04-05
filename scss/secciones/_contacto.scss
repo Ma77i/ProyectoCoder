@@ -1,0 +1,47 @@
+@import "mixins";
+
+form {
+    fieldset {
+        background-color: rgba(22, 22, 22, 0.774);
+        border-width: 5px;
+        padding: 0%;
+        border-radius: 10%;
+    }
+
+    #campo-form {
+        display: $flex;
+        flex-direction: column;
+        margin: auto;
+        width: ($ancho-max/2);
+        padding: 0.5% 5% 2% 5%;
+    }
+
+    legend {
+        #estiloH2 {
+            @include fuentex;
+            font-size: 40px;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+    body {
+        background-image: url(/imagenes/logocel.png);
+        form {
+            fieldset {
+                background-color: rgba(22, 22, 22, 0.774);
+                border-width: 5px;
+                padding: 0%;
+                border-radius: 10%;
+            }
+            #campo-form {
+                display: $flex;
+                flex-direction: column;
+                margin: auto;
+                width: ($ancho-max)-10;
+                padding: 0.5% 5% 2% 5%;
+            }
+        }
+    }
+}

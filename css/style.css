@@ -165,10 +165,8 @@ form legend #estiloH2 {
   color: #000000; }
 
 body {
-  -webkit-background: #000000;
-  -moz-background: #000000;
-  background: #000000;
   background-image: url("/imagenes/zeppelinlogo.jpg");
+  background-color: #000000 !important;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh; }

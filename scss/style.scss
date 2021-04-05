@@ -40,11 +40,8 @@
 }
 
 body {
-    
-    -webkit-background: $color-primario;
-    -moz-background: $color-primario;
-    background: $color-primario;
     background-image: url("/imagenes/zeppelinlogo.jpg");
+    background-color: $color-primario!important;
     background-repeat: no-repeat;
     background-size: cover;
     height: $alto-max;

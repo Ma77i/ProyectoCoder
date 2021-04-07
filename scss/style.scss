@@ -102,6 +102,12 @@ body {
             transform: rotate(360deg);
             transition: all 0.5s;
         }
+        .copyright {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: $color-primario;
+            color: $color-secundario;
+            margin: 0!important;
+        }
     }
 
 }

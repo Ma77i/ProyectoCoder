@@ -105,9 +105,9 @@
     background-image: url(/imagenes/logocel.png); }
     body .contenedor {
       grid-template-columns: 1fr;
-      width: 80%;
+      width: 95%;
       margin: auto;
-      margin-bottom: 10vh; } }
+      margin-bottom: 15vh; } }
 
 form fieldset {
   background-color: #131313da;
@@ -239,8 +239,8 @@ body {
     body header nav ul#botones li {
       margin-bottom: 2%; }
       body header nav ul#botones li .botones__nav {
-        padding: 2px 5px;
-        font-size: 1.15rem; }
+        padding: 2px 7px;
+        font-size: 1.05rem; }
     body #estiloH1 {
       text-align: center;
       margin-top: 5vh; } }

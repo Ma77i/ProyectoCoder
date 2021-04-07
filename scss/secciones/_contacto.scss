@@ -1,8 +1,9 @@
 @import "mixins";
 
 form {
+    
     fieldset {
-        background-color: rgba(22, 22, 22, 0.774);
+        background-color: $color-terciario;
         border-width: 5px;
         padding: 0%;
         border-radius: 10%;
@@ -14,14 +15,13 @@ form {
         flex-direction: column;
         margin: auto;
         width: ($ancho-max/2);
-        padding: 0.5% 5% 2% 5%;
+        padding: 0.5% 5% 0.5% 5%;
     }
 
     legend {
         #estiloH2 {
             @include fuentex;
-            font-size: 40px;
-            letter-spacing: 0.4rem;
+            font-size: 25px;
         }
     }
 

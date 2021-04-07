@@ -13,7 +13,7 @@
         .main__img--imagen {
             
             position: relative;
-            margin-top: 2%;
+            margin-top: 1.5%;
             width: 90%;
             border: 1px solid rgb(66, 66, 37);
             animation: swing 1.2s ease-in-out infinite alternate;
@@ -38,7 +38,7 @@
     .parrafo {
         display: $flex;
         flex-direction: column;
-        position: fixed;
+        position: absolute;
         font-family: $fuente-philo;
         color: $color-secundario;
         letter-spacing: 3px;

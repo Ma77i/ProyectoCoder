@@ -11,7 +11,7 @@
     align-items: center; }
     .main .main__img .main__img--imagen {
       position: relative;
-      margin-top: 2%;
+      margin-top: 1.5%;
       width: 90%;
       border: 1px solid #424225;
       animation: swing 1.2s ease-in-out infinite alternate;
@@ -29,7 +29,7 @@
   .main .parrafo {
     display: flex;
     flex-direction: column;
-    position: fixed;
+    position: absolute;
     font-family: "Philosopher", sans-serif;
     color: #ffffff;
     letter-spacing: 3px;
@@ -88,7 +88,7 @@
   align-items: center;
   margin-left: 2%;
   margin-right: 2%;
-  margin-bottom: 10vh; }
+  margin-bottom: 15vh; }
   .contenedor .contenedor__videos {
     width: 100%;
     display: flex;
@@ -110,7 +110,7 @@
       margin-bottom: 10vh; } }
 
 form fieldset {
-  background-color: rgba(22, 22, 22, 0.774);
+  background-color: #131313da;
   border-width: 5px;
   padding: 0%;
   border-radius: 10%;
@@ -121,7 +121,7 @@ form #campo-form {
   flex-direction: column;
   margin: auto;
   width: 50%;
-  padding: 0.5% 5% 2% 5%; }
+  padding: 0.5% 5% 0.5% 5%; }
 
 form legend #estiloH2 {
   font-family: "Kashmir", cursive;
@@ -129,8 +129,7 @@ form legend #estiloH2 {
   text-align: center;
   text-shadow: 0px 0px 9px #ffffff;
   letter-spacing: 0.2rem;
-  font-size: 40px;
-  letter-spacing: 0.4rem; }
+  font-size: 25px; }
 
 @media only screen and (max-width: 700px) {
   body {

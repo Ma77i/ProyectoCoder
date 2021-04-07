@@ -31,6 +31,7 @@
     margin-top: 2vh;
     -webkit-text-stroke: 1px $color-secundario;
     color: $color-primario;
+    z-index: -1;
 }
 
 body {
@@ -45,6 +46,7 @@ body {
         justify-content: center;
         position: sticky;
         top: 0%;
+        z-index: 1;
         div {
             margin: auto;
         }
@@ -89,8 +91,6 @@ body {
             }
         }
     }
-
-    
 
     footer.pie {
         text-align: $texto-centro;

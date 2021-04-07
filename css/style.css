@@ -166,7 +166,8 @@ form legend #estiloH2 {
   text-transform: uppercase;
   margin-top: 2vh;
   -webkit-text-stroke: 1px #ffffff;
-  color: #000000; }
+  color: #000000;
+  z-index: -1; }
 
 body {
   background-color: #000000 !important;
@@ -178,7 +179,8 @@ body {
     flex-direction: column;
     justify-content: center;
     position: sticky;
-    top: 0%; }
+    top: 0%;
+    z-index: 1; }
     body header div {
       margin: auto; }
     body header nav {

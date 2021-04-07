@@ -3,28 +3,29 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; }
+  flex-direction: column;
+  margin-bottom: 10vh; }
   .main .main__img {
     display: flex;
     justify-content: center;
     align-items: center; }
     .main .main__img .main__img--imagen {
       position: relative;
-      margin-top: 3%;
-      width: 87%;
+      margin-top: 2%;
+      width: 90%;
       border: 1px solid #424225;
       animation: swing 1.2s ease-in-out infinite alternate;
-      -webkit-animation: swing 1.2s ease-in-out infinite alternate;
-      -moz-animation: swing 1.2s ease-in-out infinite alternate;
+      -webkit-animation: swing 1.1s ease-in-out infinite alternate;
+      -moz-animation: swing 1.1s ease-in-out infinite alternate;
       transform-origin: center -80px;
       max-width: 100%;
-      box-shadow: 0 10px 20px rgba(17, 25, 25, 0.2); }
+      box-shadow: 0px 0px 12px #ffffff; }
 
 @keyframes swing {
   from {
-    transform: rotate(-2deg); }
+    transform: rotate(-0.1deg); }
   to {
-    transform: rotate(2deg); } }
+    transform: rotate(0.1deg); } }
   .main .parrafo {
     display: flex;
     flex-direction: column;
@@ -53,15 +54,17 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around; }
+  justify-content: space-around;
+  margin-bottom: 10vh; }
   #contenedorDiscografia .discos {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #131313da;
     margin: 10px;
-    padding: 5px;
-    justify-content: space-around; }
+    padding: 7px;
+    justify-content: space-around;
+    box-shadow: 0px 0px 5px #ffffff; }
     #contenedorDiscografia .discos .discos__tapa {
       display: flex;
       flex-direction: column; }
@@ -76,36 +79,42 @@
         margin-bottom: 1vh; }
 
 .contenedor {
-  height: 100vh;
   display: grid;
   row-gap: 10px;
-  column-gap: 10px;
+  column-gap: 20px;
   grid-template-columns: 1fr 1fr;
   grid-auto-rows: 1fr;
   justify-content: space-between;
   align-items: center;
-  margin: 5vh; }
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 10vh; }
   .contenedor .contenedor__videos {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     border: 1px solid #ffffff;
-    border-radius: 5%; }
+    border-radius: 5%;
+    box-shadow: 0px 0px 5px #ffffff; }
     .contenedor .contenedor__videos iframe {
-      align-items: center; }
+      width: 100%; }
 
 @media only screen and (max-width: 700px) {
   body {
     background-image: url(/imagenes/logocel.png); }
     body .contenedor {
       grid-template-columns: 1fr;
-      width: 80%; } }
+      width: 80%;
+      margin: auto;
+      margin-bottom: 10vh; } }
 
 form fieldset {
   background-color: rgba(22, 22, 22, 0.774);
   border-width: 5px;
   padding: 0%;
-  border-radius: 10%; }
+  border-radius: 10%;
+  box-shadow: 0px 0px 12px #ffffff; }
 
 form #campo-form {
   display: flex;
@@ -120,7 +129,8 @@ form legend #estiloH2 {
   text-align: center;
   text-shadow: 0px 0px 9px #ffffff;
   letter-spacing: 0.2rem;
-  font-size: 40px; }
+  font-size: 40px;
+  letter-spacing: 0.4rem; }
 
 @media only screen and (max-width: 700px) {
   body {
@@ -146,12 +156,6 @@ form legend #estiloH2 {
   padding: 0;
   box-sizing: border-box; }
 
-/**
-.fuentex {
-    font-family: $fuente-kashmir;
-    color: white;
-    text-align: $texto-centro;
-}*/
 #estiloH1 {
   font-family: "Kashmir", cursive;
   color: #ffffff;
@@ -165,51 +169,54 @@ form legend #estiloH2 {
   color: #000000; }
 
 body {
-  background-image: url("/imagenes/zeppelinlogo.jpg");
   background-color: #000000 !important;
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh; }
+  background-size: cover; }
   body header {
     background: #000000;
     display: flex;
-    justify-content: center; }
-  body nav {
-    display: flex;
+    flex-direction: column;
     justify-content: center;
-    background: linear-gradient(to bottom, #000000 80%, #292929 98%);
-    width: 100%;
-    height: 4vh;
     position: sticky;
-    padding-top: 0%; }
-    body nav ul#botones {
+    top: 0%; }
+    body header div {
+      margin: auto; }
+    body header nav {
       display: flex;
-      flex-direction: row;
       flex-wrap: wrap;
+      justify-content: center;
       align-items: center;
-      justify-content: center; }
-      body nav ul#botones li {
-        display: inline-block; }
-      body nav ul#botones .botones__nav {
-        font-family: "Kashmir", cursive;
-        color: #ffffff;
-        text-align: center;
-        text-shadow: 0px 0px 9px #ffffff;
-        letter-spacing: 0.2rem;
-        text-shadow: 21px -11px 100px -8px rgba(255, 0, 0, 0.89);
-        background: linear-gradient(to top, #000000 73%, #808080 100%, #000000 73%);
-        text-decoration: none;
-        text-transform: uppercase;
-        border-radius: 10%;
-        padding: 0 15px;
-        border: 1px solid #ffffff;
-        cursor: pointer;
-        font-size: 22px;
-        line-height: 1em;
-        font-weight: 700; }
-        body nav ul#botones .botones__nav:hover {
-          background: linear-gradient(to top, #b0b0b0 0%, #ffffff 23%);
-          color: #000000; }
+      background: linear-gradient(to bottom, #000000 80%, #292929 98%);
+      width: 100%;
+      height: 4vh; }
+      body header nav ul#botones {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center; }
+        body header nav ul#botones li {
+          display: inline-block; }
+        body header nav ul#botones .botones__nav {
+          font-family: "Kashmir", cursive;
+          color: #ffffff;
+          text-align: center;
+          text-shadow: 0px 0px 9px #ffffff;
+          letter-spacing: 0.2rem;
+          text-shadow: 21px -11px 100px -8px rgba(255, 0, 0, 0.89);
+          background: linear-gradient(to top, #000000 73%, #808080 100%, #000000 73%);
+          text-decoration: none;
+          text-transform: uppercase;
+          border-radius: 10%;
+          padding: 0 15px;
+          border: 1px solid #ffffff;
+          cursor: pointer;
+          font-size: 22px;
+          line-height: 1em;
+          font-weight: 700; }
+          body header nav ul#botones .botones__nav:hover {
+            background: linear-gradient(to top, #b0b0b0 0%, #ffffff 23%);
+            color: #000000; }
   body footer.pie {
     text-align: center;
     position: fixed;
@@ -222,9 +229,11 @@ body {
 @media only screen and (max-width: 700px) {
   body {
     background: #000000 !important; }
+    body header nav ul#botones li {
+      margin-bottom: 2%; }
+      body header nav ul#botones li .botones__nav {
+        padding: 2px 5px;
+        font-size: 1.15rem; }
     body #estiloH1 {
       text-align: center;
-      margin-top: 5vh; }
-    body nav ul#botones .botones__nav {
-      padding: 2px 10px;
-      font-size: 1.25rem; } }
+      margin-top: 5vh; } }

@@ -23,12 +23,6 @@
     box-sizing: border-box;
 }
 
-/**
-.fuentex {
-    font-family: $fuente-kashmir;
-    color: white;
-    text-align: $texto-centro;
-}*/
 
 #estiloH1 {
     @include fuentex;
@@ -40,58 +34,63 @@
 }
 
 body {
-    background-image: url("/imagenes/zeppelinlogo.jpg");
     background-color: $color-primario!important;
     background-repeat: no-repeat;
     background-size: cover;
-    height: $alto-max;
 
     header {
         background: $color-primario;
         display: $flex;
+        flex-direction: column;
         justify-content: center;
-    }
-
-    nav {
-        display: $flex;
-        justify-content: center;
-        background: $gradiente-negro-abajo;
-        width: $ancho-max;
-        height: ($alto-max/10)-6;
         position: sticky;
-        padding-top: 0%;
-
-        ul#botones {
-            display: flex;
-            flex-direction: row;
+        top: 0%;
+        div {
+            margin: auto;
+        }
+        nav {
+            display: $flex;
             flex-wrap: wrap;
-            align-items: center;
             justify-content: center;
-
-            li {
-                display: $inlineblock;
-            }
-            .botones__nav {
-                @include fuentex;
-                text-shadow: 21px -11px 100px -8px rgba(255, 0, 0, 0.89);
-                background: $gradiente-negro-arriba;
-                text-decoration: none;
-                text-transform: uppercase;
-                border-radius: 10%;
-                padding: 0 15px;
-                border: 1px solid $color-secundario;
-                cursor: pointer;
-                font-size: 22px;
-                line-height: 1em;
-                font-weight: 700;
-                
-                &:hover {
-                    background: $gradiente-blanco-arriba;
-                    color: $color-primario;
+            align-items: center;
+            background: $gradiente-negro-abajo;
+            width: $ancho-max;
+            height: ($alto-max/10)-6;
+    
+            ul#botones {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+    
+                li {
+                    display: $inlineblock;
+                }
+                .botones__nav {
+                    @include fuentex;
+                    text-shadow: 21px -11px 100px -8px rgba(255, 0, 0, 0.89);
+                    background: $gradiente-negro-arriba;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    border-radius: 10%;
+                    padding: 0 15px;
+                    border: 1px solid $color-secundario;
+                    cursor: pointer;
+                    font-size: 22px;
+                    line-height: 1em;
+                    font-weight: 700;
+                    
+                    &:hover {
+                        background: $gradiente-blanco-arriba;
+                        color: $color-primario;
+                    }
                 }
             }
         }
     }
+
+    
 
     footer.pie {
         text-align: $texto-centro;
@@ -110,18 +109,24 @@ body {
 @media only screen and (max-width: 700px) {
     body {
         background: $color-primario !important;
-
+        header {
+            nav {
+                ul#botones {
+                    li {
+                        margin-bottom: 2%;
+                        .botones__nav {
+                            padding: 2px 5px;
+                            font-size: 1.15rem;
+                            
+                        }
+                    }
+                }
+            }
+        }
         #estiloH1 {
             text-align: $texto-centro;
             margin-top: 5vh;
         }
-        nav {
-            ul#botones {
-                .botones__nav {
-                    padding: 2px 10px;
-                    font-size: 1.25rem;
-                }
-            }
-        }
+
     }
 }

@@ -35,7 +35,7 @@
     letter-spacing: 3px;
     font-size: 15px;
     text-align: center;
-    margin-top: 30%; }
+    margin-top: 26%; }
     .main .parrafo .parrafo__cancion {
       color: #ffffff;
       letter-spacing: 3px;
@@ -148,7 +148,7 @@ form legend #estiloH2 {
 
 @font-face {
   font-family: "Kashmir", cursive;
-  src: url(kashmir.ttf), format(TrueType); }
+  src: url(Kashmir.TTF), format(TrueType); }
 
 * {
   margin: 0;
@@ -197,22 +197,22 @@ body {
         align-items: center;
         justify-content: center; }
         body header nav ul#botones li {
-          display: inline-block; }
+          display: flex;
+          flex-wrap: nowrap; }
         body header nav ul#botones .botones__nav {
           font-family: "Kashmir", cursive;
           color: #ffffff;
           text-align: center;
           text-shadow: 0px 0px 9px #ffffff;
           letter-spacing: 0.2rem;
-          text-shadow: 21px -11px 100px -8px rgba(255, 0, 0, 0.89);
           background: linear-gradient(to top, #000000 73%, #808080 100%, #000000 73%);
           text-decoration: none;
           text-transform: uppercase;
           border-radius: 10%;
-          padding: 0 15px;
+          padding: 1px 15px;
           border: 1px solid #ffffff;
           cursor: pointer;
-          font-size: 22px;
+          font-size: 1.375rem;
           line-height: 1em;
           font-weight: 700; }
           body header nav ul#botones .botones__nav:hover {
@@ -239,8 +239,8 @@ body {
     body header nav ul#botones li {
       margin-bottom: 2%; }
       body header nav ul#botones li .botones__nav {
-        padding: 2px 7px;
-        font-size: 1.05rem; }
+        padding: 2px 8px;
+        font-size: 0.8rem; }
     body #estiloH1 {
       text-align: center;
       margin-top: 5vh; } }

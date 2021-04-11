@@ -14,7 +14,11 @@
 
 @font-face {
     font-family: $fuente-kashmir;
-    src: url('Kashmir.TTF'), format('TrueType');
+    src: url('kashmir-webfont.eot');
+    src: url('kashmir-webfont.eot?#iefix') format('embedded-opentype'),
+        url('kashmir-webfont.woff') format('woff'),
+        url('kashmir-webfont.ttf') format('truetype'),
+        url('kashmir-webfont.svg#webfont') format('svg');
 }
 
 * {

@@ -9,6 +9,7 @@
 @mixin fuentex{
     font-family: 'kashmir-webfont', Arial, sans-serif;
     color:$color-secundario;
+    font-size: small;
     text-align: $texto-centro;
     text-shadow: 0px 0px 9px $color-secundario;
     letter-spacing: 0.2rem;

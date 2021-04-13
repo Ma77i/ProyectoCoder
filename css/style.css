@@ -11,21 +11,11 @@
     align-items: center; }
     .main .main__img .main__img--imagen {
       position: relative;
-      margin-top: 1.5%;
+      margin-top: 1%;
       width: 90%;
       border: 1px solid #424225;
-      animation: swing 1.2s ease-in-out infinite alternate;
-      -webkit-animation: swing 1.1s ease-in-out infinite alternate;
-      -moz-animation: swing 1.1s ease-in-out infinite alternate;
-      transform-origin: center -80px;
       max-width: 100%;
-      box-shadow: 0px 0px 12px #ffffff; }
-
-@keyframes swing {
-  from {
-    transform: rotate(-0.1deg); }
-  to {
-    transform: rotate(0.1deg); } }
+      box-shadow: 0px 0px 7px #ffffff; }
   .main .parrafo {
     display: flex;
     flex-direction: column;
@@ -72,7 +62,8 @@
         width: 270px; }
       #contenedorDiscografia .discos .discos__tapa .discos__tapa--titulo {
         font-family: "Philosopher", sans-serif;
-        color: #ffffff; }
+        color: #ffffff;
+        margin-top: 1vh; }
       #contenedorDiscografia .discos .discos__tapa .discos__tapa--titulo--año {
         font-family: "Philosopher", sans-serif;
         color: #ffffff;
@@ -126,10 +117,13 @@ form #campo-form {
 form legend #estiloH2 {
   font-family: 'kashmir-webfont', Arial, sans-serif;
   color: #ffffff;
+  font-size: small;
   text-align: center;
   text-shadow: 0px 0px 9px #ffffff;
   letter-spacing: 0.2rem;
-  font-size: 25px; }
+  font-family: 'Recursive', sans-serif;
+  letter-spacing: 0.1rem;
+  font-size: 20px; }
 
 @media only screen and (max-width: 700px) {
   body {
@@ -159,6 +153,7 @@ form legend #estiloH2 {
 #estiloH1 {
   font-family: 'kashmir-webfont', Arial, sans-serif;
   color: #ffffff;
+  font-size: small;
   text-align: center;
   text-shadow: 0px 0px 9px #ffffff;
   letter-spacing: 0.2rem;
@@ -203,9 +198,11 @@ body {
         body header nav ul#botones .botones__nav {
           font-family: 'kashmir-webfont', Arial, sans-serif;
           color: #ffffff;
+          font-size: small;
           text-align: center;
           text-shadow: 0px 0px 9px #ffffff;
           letter-spacing: 0.2rem;
+          font-family: 'Recursive', sans-serif;
           background: linear-gradient(to top, #000000 73%, #808080 100%, #000000 73%);
           text-decoration: none;
           text-transform: uppercase;
@@ -215,7 +212,8 @@ body {
           cursor: pointer;
           font-size: 1.375rem;
           line-height: 1em;
-          font-weight: 700; }
+          font-weight: 700;
+          letter-spacing: 0.1rem; }
           body header nav ul#botones .botones__nav:hover {
             background: linear-gradient(to top, #b0b0b0 0%, #ffffff 23%);
             color: #000000; }
@@ -238,7 +236,7 @@ body {
   body {
     background: #000000 !important; }
     body header nav ul#botones li {
-      margin-bottom: 2%; }
+      margin-bottom: 0.1%; }
       body header nav ul#botones li .botones__nav {
         padding: 2px 8px;
         font-size: 0.8rem; }

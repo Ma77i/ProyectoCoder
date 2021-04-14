@@ -21,7 +21,9 @@ form {
     legend {
         #estiloH2 {
             @include fuentex;
-            font-size: 25px;
+            font-family: 'Recursive', sans-serif;
+            letter-spacing: 0.1rem;
+            font-size: 20px;
         }
     }
 

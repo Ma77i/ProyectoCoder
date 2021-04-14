@@ -64,7 +64,8 @@
         width: 270px; }
       #contenedorDiscografia .discos .discos__tapa .discos__tapa--titulo {
         font-family: "Philosopher", sans-serif;
-        color: #ffffff; }
+        color: #ffffff;
+        margin-top: 1vh; }
       #contenedorDiscografia .discos .discos__tapa .discos__tapa--titulo--año {
         font-family: "Philosopher", sans-serif;
         color: #ffffff;
@@ -116,12 +117,15 @@ form #campo-form {
   padding: 0.5% 5% 0.5% 5%; }
 
 form legend #estiloH2 {
-  font-family: "kashmir-webfont", Arial, sans-serif;
+  font-family: 'kashmir-webfont', Arial, sans-serif;
   color: #ffffff;
+  font-size: small;
   text-align: center;
   text-shadow: 0px 0px 9px #ffffff;
   letter-spacing: 0.2rem;
-  font-size: 25px; }
+  font-family: 'Recursive', sans-serif;
+  letter-spacing: 0.1rem;
+  font-size: 20px; }
 
 @media only screen and (max-width: 700px) {
   body {
@@ -236,8 +240,9 @@ html {
   box-sizing: border-box; }
 
 #estiloH1 {
-  font-family: "kashmir-webfont", Arial, sans-serif;
+  font-family: 'kashmir-webfont', Arial, sans-serif;
   color: #ffffff;
+  font-size: small;
   text-align: center;
   text-shadow: 0px 0px 9px #ffffff;
   letter-spacing: 0.2rem;
@@ -280,8 +285,9 @@ body {
           display: flex;
           flex-wrap: nowrap; }
         body header nav ul#botones .botones__nav {
-          font-family: "kashmir-webfont", Arial, sans-serif;
+          font-family: 'kashmir-webfont', Arial, sans-serif;
           color: #ffffff;
+          font-size: small;
           text-align: center;
           text-shadow: 0px 0px 9px #ffffff;
           letter-spacing: 0.2rem;

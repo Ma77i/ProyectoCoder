@@ -29,14 +29,15 @@
         color: $color-secundario;
         letter-spacing: 3px;
         font-size: 15px;
+        font-style: italic;
         text-align: $texto-centro;
         margin-top: 26%;
 
         .parrafo__cancion {
-            color: $color-secundario;
             letter-spacing: 3px;
             font-size: 18px;
             font-weight: lighter;
+            margin: 0.3rem 0 ;
         }
         .parrafo__play {
             color: #ffffff;

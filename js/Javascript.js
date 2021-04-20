@@ -1,5 +1,5 @@
 ScrollReveal().reveal('.headline',{
-  duration: 3000
+  duration: 2000
 });
 
 var myModal = document.getElementById('myModal')

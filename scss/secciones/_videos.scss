@@ -1,38 +1,58 @@
-.contenedor {
+@import "mixins";
 
-    display: $grid;
-    row-gap: 10px;
-    column-gap: 20px;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 1fr;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-bottom: 15vh;
-
-    .contenedor__videos {
-
-        width: 100%;
-        display: $flex;
+body {
+    .tituloVid{
+        @include fuentex;
+        font-size: 50px;
+        text-transform: uppercase;
+        margin-top: 2vh;
+        -webkit-text-stroke: 0.001px $color-secundario;
+        color: $color-primario;
+        z-index: -1;
+    }
+    
+    .contenedor {
+    
+        display: $grid;
+        row-gap: 10px;
+        column-gap: 20px;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 1fr;
+        justify-content: space-between;
         align-items: center;
-        justify-content: center;
-        border: 1px solid $color-secundario;
-        border-radius: 5%;
-        box-shadow: 0px 0px 5px $color-secundario;
-
-        iframe {
-
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-bottom: 15vh;
+    
+        .contenedor__videos {
+    
             width: 100%;
+            display: $flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid $color-secundario;
+            border-radius: 5%;
+            box-shadow: 0px 0px 5px $color-secundario;
+    
+            iframe {
+    
+                width: 100%;
+            }
+    
         }
-
     }
 }
+
 
 @media only screen and (max-width: 700px) {
     body {
         background-image: url(/imagenes/logocel.png);
 
+        .tituloVid {
+            text-align: $texto-centro;
+            margin-top: 8vh;
+            -webkit-text-stroke: 0.001px $color-secundario;
+        }
         .contenedor {
             grid-template-columns: 1fr;
             width: 95%;

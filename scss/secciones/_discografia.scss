@@ -1,3 +1,15 @@
+@import "mixins";
+
+.tituloDisc {
+    @include fuentex;
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-top: 2vh;
+    -webkit-text-stroke: 0.001px $color-secundario;
+    color: $color-primario;
+    z-index: -1;
+}
+
 #contenedorDiscografia {
     display: $flex;
     flex-direction: row;
@@ -37,4 +49,14 @@
         }
 
     }
+}
+
+
+@media only screen and (max-width: 700px) {
+    .tituloDisc {
+        text-align: $texto-centro;
+        margin-top: 8vh;
+        -webkit-text-stroke: 1px $color-secundario;
+    }
+
 }

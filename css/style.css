@@ -34,7 +34,7 @@
     /*margin-top: 26%;*/ }
     .main .parrafo .parrafo__cancion {
       letter-spacing: 3px;
-      font-size: 18px;
+      font-size: 20px;
       font-weight: lighter;
       margin: 0.3rem 0 0 0; }
 
@@ -42,10 +42,10 @@
   .main .main__img .main__img--imagen {
     margin-top: 30%; }
   .main .parrafo {
-    top: 60%;
+    top: 70%;
     bottom: 10%;
-    left: 5%;
-    right: 5%; } }
+    left: 2%;
+    right: 2%; } }
 
 #contenedorDiscografia {
   display: flex;

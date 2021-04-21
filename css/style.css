@@ -42,7 +42,10 @@
   .main .main__img .main__img--imagen {
     margin-top: 30%; }
   .main .parrafo {
-    margin-top: 100%; } }
+    top: 55%;
+    bottom: 20%;
+    left: 15%;
+    right: 15%; } }
 
 #contenedorDiscografia {
   display: flex;
@@ -321,4 +324,4 @@ body {
         letter-spacing: 0; }
     body #estiloH1 {
       text-align: center;
-      margin-top: 5vh; } }
+      margin-top: 10vh; } }

@@ -42,10 +42,10 @@
   .main .main__img .main__img--imagen {
     margin-top: 30%; }
   .main .parrafo {
-    top: 55%;
-    bottom: 20%;
-    left: 15%;
-    right: 15%; } }
+    top: 60%;
+    bottom: 10%;
+    left: 5%;
+    right: 5%; } }
 
 #contenedorDiscografia {
   display: flex;
@@ -123,6 +123,7 @@ form #campo-form {
 
 form legend #estiloH2 {
   font-family: 'kashmir-webfont', Arial, sans-serif;
+  font-size: small;
   color: #ffffff;
   text-align: center;
   text-shadow: 0px 0px 9px #ffffff;
@@ -233,6 +234,7 @@ html {
 
 #estiloH1 {
   font-family: 'kashmir-webfont', Arial, sans-serif;
+  font-size: small;
   color: #ffffff;
   text-align: center;
   text-shadow: 0px 0px 9px #ffffff;
@@ -279,6 +281,7 @@ body {
           flex-wrap: nowrap; }
         body header nav .botones .botones__nav {
           font-family: 'kashmir-webfont', Arial, sans-serif;
+          font-size: small;
           color: #ffffff;
           text-align: center;
           text-shadow: 0px 0px 9px #ffffff;
@@ -324,4 +327,4 @@ body {
         letter-spacing: 0; }
     body #estiloH1 {
       text-align: center;
-      margin-top: 10vh; } }
+      margin-top: 8vh; } }

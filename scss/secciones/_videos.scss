@@ -51,7 +51,7 @@ body {
         .tituloVid {
             text-align: $texto-centro;
             margin-top: 8vh;
-            -webkit-text-stroke: 0.001px $color-secundario;
+            text-shadow: 0;
         }
         .contenedor {
             grid-template-columns: 1fr;

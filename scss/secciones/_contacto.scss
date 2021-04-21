@@ -64,7 +64,8 @@ form {
     .tituloCont {
         text-align: $texto-centro;
         margin-top: 8vh;
-        text-shadow: 0px 0px 11px $color-secundario;
+        color: $color-secundario;
+        text-shadow: 0;
     }
 
 }

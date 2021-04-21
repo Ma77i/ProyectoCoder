@@ -25,26 +25,27 @@
         display: $flex;
         flex-direction: column;
         position: absolute;
+        top: 75%;
+        bottom: 20%;
+        left: 35%;
+        right: 35%;
         font-family: $fuente-philo;
         color: $color-secundario;
         letter-spacing: 3px;
         font-size: 15px;
         font-style: italic;
         text-align: $texto-centro;
-        margin-top: 26%;
+        /*margin-top: 26%;*/
 
         .parrafo__cancion {
             letter-spacing: 3px;
             font-size: 18px;
             font-weight: lighter;
-            margin: 0.3rem 0 ;
+            margin: 0.3rem 0 0 0;
         }
-        .parrafo__play {
-            color: #ffffff;
-        }
-
-        }
-        }
+        
+    }
+}
 
 @media only screen and (max-width: 700px) {
     .main {

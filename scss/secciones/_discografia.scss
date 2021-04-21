@@ -3,6 +3,7 @@
 .tituloDisc {
     @include fuentex;
     font-size: 50px;
+    font-weight: 100;
     text-transform: uppercase;
     margin-top: 2vh;
     z-index: -1;
@@ -54,6 +55,7 @@
     .tituloDisc {
         text-align: $texto-centro;
         margin-top: 8vh;
+        text-shadow: none;
     }
 
 }

@@ -6,8 +6,6 @@
     font-size: 50px;
     text-transform: uppercase;
     margin-top: 2vh;
-    -webkit-text-stroke: 1px $color-secundario;
-    color: $color-primario;
     z-index: -1;
 }
 
@@ -15,8 +13,6 @@
     .tituloFoto {
         text-align: $texto-centro;
         margin-top: 8vh;
-        color: $color-secundario;
-        text-shadow: 0;
     }
 
 }

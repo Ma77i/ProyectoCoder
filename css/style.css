@@ -57,8 +57,6 @@
   font-size: 50px;
   text-transform: uppercase;
   margin-top: 2vh;
-  -webkit-text-stroke: 0.001px #ffffff;
-  color: #000000;
   z-index: -1; }
 
 #contenedorDiscografia {
@@ -93,8 +91,7 @@
 @media only screen and (max-width: 700px) {
   .tituloDisc {
     text-align: center;
-    margin-top: 8vh;
-    text-shadow: 0; } }
+    margin-top: 8vh; } }
 
 body .tituloVid {
   font-family: 'kashmir-webfont', Arial, sans-serif;
@@ -106,8 +103,6 @@ body .tituloVid {
   font-size: 50px;
   text-transform: uppercase;
   margin-top: 2vh;
-  -webkit-text-stroke: 0.001px #ffffff;
-  color: #000000;
   z-index: -1; }
 
 body .contenedor {
@@ -137,8 +132,7 @@ body .contenedor {
     background-image: url(/imagenes/logocel.png); }
     body .tituloVid {
       text-align: center;
-      margin-top: 8vh;
-      text-shadow: 0; }
+      margin-top: 8vh; }
     body .contenedor {
       grid-template-columns: 1fr;
       width: 95%;
@@ -155,8 +149,6 @@ body .contenedor {
   font-size: 50px;
   text-transform: uppercase;
   margin-top: 2vh;
-  -webkit-text-stroke: 1px #ffffff;
-  color: #000000;
   z-index: -1; }
 
 form fieldset {
@@ -202,9 +194,7 @@ form legend #estiloH2 {
 @media only screen and (max-width: 700px) {
   .tituloCont {
     text-align: center;
-    margin-top: 8vh;
-    color: #ffffff;
-    text-shadow: 0; } }
+    margin-top: 8vh; } }
 
 .tituloFoto {
   font-family: 'kashmir-webfont', Arial, sans-serif;
@@ -216,16 +206,12 @@ form legend #estiloH2 {
   font-size: 50px;
   text-transform: uppercase;
   margin-top: 2vh;
-  -webkit-text-stroke: 1px #ffffff;
-  color: #000000;
   z-index: -1; }
 
 @media only screen and (max-width: 700px) {
   .tituloFoto {
     text-align: center;
-    margin-top: 8vh;
-    color: #ffffff;
-    text-shadow: 0; } }
+    margin-top: 8vh; } }
 
 html {
   min-height: 100%; }

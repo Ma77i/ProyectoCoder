@@ -193,7 +193,7 @@ form legend #estiloH2 {
       width: 90%;
       padding: 0.5% 5% 2% 5%; } }
 
-.tituloFoto {
+body .tituloFoto {
   font-family: 'kashmir-webfont', Arial, sans-serif;
   font-size: small;
   color: #ffffff;
@@ -203,6 +203,11 @@ form legend #estiloH2 {
   text-transform: uppercase;
   margin-top: 2vh;
   z-index: -1; }
+
+body .titmod {
+  font-family: 'kashmir-webfont', Arial, sans-serif;
+  text-align: center;
+  letter-spacing: 0.3rem; }
 
 @media only screen and (max-width: 700px) {
   .tituloFoto {

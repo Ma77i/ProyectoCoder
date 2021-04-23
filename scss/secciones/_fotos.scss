@@ -1,13 +1,20 @@
 
 @import "mixins";
-
-.tituloFoto {
-    @include fuentex;
-    font-size: 50px;
-    text-transform: uppercase;
-    margin-top: 2vh;
-    z-index: -1;
+body {
+    .tituloFoto {
+        @include fuentex;
+        font-size: 50px;
+        text-transform: uppercase;
+        margin-top: 2vh;
+        z-index: -1;
+    }
+    .titmod {
+        font-family: 'kashmir-webfont', Arial, sans-serif;
+        text-align: $texto-centro;
+        letter-spacing: 0.3rem;
+    }
 }
+
 
 @media only screen and (max-width: 700px) {
     .tituloFoto {

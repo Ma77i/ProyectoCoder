@@ -129,17 +129,15 @@ body .contenedor {
       width: 100%; }
 
 @media only screen and (max-width: 700px) {
-  body {
-    background-image: url(/imagenes/logocel.png); }
-    body .tituloVid {
-      text-align: center;
-      margin-top: 8vh;
-      text-shadow: none; }
-    body .contenedor {
-      grid-template-columns: 1fr;
-      width: 95%;
-      margin: auto;
-      margin-bottom: 15vh; } }
+  body .tituloVid {
+    text-align: center;
+    margin-top: 8vh;
+    text-shadow: none; }
+  body .contenedor {
+    grid-template-columns: 1fr;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 15vh; } }
 
 .tituloCont {
   font-family: 'kashmir-webfont', Arial, sans-serif;
@@ -180,6 +178,9 @@ form legend #estiloH2 {
 @media only screen and (max-width: 700px) {
   body {
     background-image: url(/imagenes/logocel.png); }
+    body .tituloCont {
+      text-align: center;
+      margin-top: 8vh; }
     body form fieldset {
       background-color: rgba(22, 22, 22, 0.774);
       border-width: 5px;
@@ -191,11 +192,6 @@ form legend #estiloH2 {
       margin: auto;
       width: 90%;
       padding: 0.5% 5% 2% 5%; } }
-
-@media only screen and (max-width: 700px) {
-  .tituloCont {
-    text-align: center;
-    margin-top: 8vh; } }
 
 .tituloFoto {
   font-family: 'kashmir-webfont', Arial, sans-serif;
@@ -299,7 +295,7 @@ html {
   box-sizing: border-box; }
 
 body {
-  background-color: #000000 !important;
+  background-color: #000000;
   background-repeat: no-repeat;
   background-size: cover; }
   body header {
@@ -370,7 +366,7 @@ body {
 
 @media only screen and (max-width: 700px) {
   body {
-    background: #000000 !important; }
+    background: #000000; }
     body header nav .botones li {
       margin-bottom: 0.1%; }
       body header nav .botones li .botones__nav {

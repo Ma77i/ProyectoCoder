@@ -42,6 +42,10 @@ form {
 @media only screen and (max-width: 700px) {
     body {
         background-image: url(/imagenes/logocel.png);
+        .tituloCont {
+            text-align: $texto-centro;
+            margin-top: 8vh;
+        }
         form {
             fieldset {
                 background-color: rgba(22, 22, 22, 0.774);
@@ -61,9 +65,6 @@ form {
 }
 
 @media only screen and (max-width: 700px) {
-    .tituloCont {
-        text-align: $texto-centro;
-        margin-top: 8vh;
-    }
+
 
 }

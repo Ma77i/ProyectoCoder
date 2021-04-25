@@ -17,31 +17,35 @@
       border: 1px solid #424225;
       max-width: 100%;
       box-shadow: 0px 0px 7px #ffffff; }
-  .main .parrafo {
+  .main .cajaTema {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 75%;
+    top: 73%;
     bottom: 20%;
     left: 35%;
-    right: 35%;
-    font-family: "Philosopher", sans-serif;
-    color: #ffffff;
-    letter-spacing: 3px;
-    font-size: 15px;
-    font-style: italic;
-    text-align: center;
-    /*margin-top: 26%;*/ }
-    .main .parrafo .parrafo__cancion {
+    right: 35%; }
+    .main .cajaTema .cajaTema__parrafo {
+      font-family: "Philosopher", sans-serif;
+      color: #ffffff;
       letter-spacing: 3px;
-      font-size: 20px;
-      font-weight: lighter;
-      margin: 0.3rem 0 0 0; }
+      font-size: 15px;
+      font-style: italic;
+      text-align: center;
+      /*margin-top: 26%;*/ }
+      .main .cajaTema .cajaTema__parrafo .boton {
+        background-color: transparent;
+        border-radius: 20%; }
+        .main .cajaTema .cajaTema__parrafo .boton .cajaTema__parrafo--cancion {
+          color: #ffffff;
+          letter-spacing: 3px;
+          font-size: 20px;
+          font-weight: lighter; }
 
 @media only screen and (max-width: 700px) {
   body .main .main__img .main__img--imagen {
     margin-top: 30%; }
-  body .main .parrafo {
+  body .main .cajaTema {
     top: 70%;
     bottom: 10%;
     left: 2%;

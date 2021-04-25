@@ -21,31 +21,40 @@
             box-shadow: 0px 0px 7px $color-secundario;
         }
     }
-    
-    .parrafo {
+    .cajaTema {
         display: $flex;
         flex-direction: column;
         position: absolute;
-        top: 75%;
+        top: 73%;
         bottom: 20%;
         left: 35%;
         right: 35%;
-        font-family: $fuente-philo;
-        color: $color-secundario;
-        letter-spacing: 3px;
-        font-size: 15px;
-        font-style: italic;
-        text-align: $texto-centro;
-        /*margin-top: 26%;*/
 
-        .parrafo__cancion {
+        .cajaTema__parrafo {
+
+            font-family: $fuente-philo;
+            color: $color-secundario;
             letter-spacing: 3px;
-            font-size: 20px;
-            font-weight: lighter;
-            margin: 0.3rem 0 0 0;
+            font-size: 15px;
+            font-style: italic;
+            text-align: $texto-centro;
+            /*margin-top: 26%;*/
+            
+            .boton {
+                background-color: transparent;
+                border-radius: 20%;
+                .cajaTema__parrafo--cancion {
+                    color: $color-secundario;
+                    letter-spacing: 3px;
+                    font-size: 20px;
+                    font-weight: lighter;
+                }
+            }
+
+            
         }
-        
     }
+
 }
 
 @media only screen and (max-width: 700px) {
@@ -57,7 +66,7 @@
                 }
             }
 
-            .parrafo {
+            .cajaTema {
                 top: 70%;
                 bottom: 10%;
                 left: 2%;

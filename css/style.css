@@ -39,15 +39,15 @@
       margin: 0.3rem 0 0 0; }
 
 @media only screen and (max-width: 700px) {
-  .main .main__img .main__img--imagen {
+  body .main .main__img .main__img--imagen {
     margin-top: 30%; }
-  .main .parrafo {
+  body .main .parrafo {
     top: 70%;
     bottom: 10%;
     left: 2%;
     right: 2%; } }
 
-.tituloDisc {
+body .tituloDisc {
   font-family: 'kashmir-webfont', Arial, sans-serif;
   font-size: small;
   color: #ffffff;
@@ -59,13 +59,13 @@
   margin-top: 2vh;
   z-index: -1; }
 
-#contenedorDiscografia {
+body .contenedorDiscografia {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
   margin-bottom: 10vh; }
-  #contenedorDiscografia .discos {
+  body .contenedorDiscografia .discos {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -75,19 +75,21 @@
     border-radius: 5%;
     justify-content: space-around;
     box-shadow: 0px 0px 10px #181818; }
-    #contenedorDiscografia .discos .discos__tapa {
+    body .contenedorDiscografia .discos .discos__tapa {
       display: flex;
       flex-direction: column; }
-      #contenedorDiscografia .discos .discos__tapa .discos__tapa--imagen {
+      body .contenedorDiscografia .discos .discos__tapa .discos__tapa--imagen {
         width: 270px;
         border-radius: 2.5%; }
-      #contenedorDiscografia .discos .discos__tapa .discos__tapa--titulo {
+      body .contenedorDiscografia .discos .discos__tapa .discos__tapa--titulo {
         font-family: "Philosopher", sans-serif;
         color: #ffffff; }
-      #contenedorDiscografia .discos .discos__tapa .discos__tapa--titulo--año {
+      body .contenedorDiscografia .discos .discos__tapa .discos__tapa--titulo--año {
         font-family: "Philosopher", sans-serif;
         color: #ffffff;
         margin-bottom: 0.5vh; }
+  body .contenedorDiscografia .discos:hover {
+    background-color: #181818; }
 
 @media only screen and (max-width: 700px) {
   .tituloDisc {
@@ -375,7 +377,7 @@ body {
 
 @media only screen and (max-width: 700px) {
   body {
-    background: #181818; }
+    background: #090909; }
     body header nav .botones li {
       margin-bottom: 0.1%; }
       body header nav .botones li .botones__nav {

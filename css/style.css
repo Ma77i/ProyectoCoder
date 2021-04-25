@@ -182,7 +182,7 @@ form legend #estiloH2 {
     text-align: center;
     margin-top: 8vh; }
   body form fieldset {
-    background-color: rgba(22, 22, 22, 0.774);
+    background-color: black;
     border-width: 5px;
     padding: 0%;
     border-radius: 10%; }
@@ -375,7 +375,7 @@ body {
 
 @media only screen and (max-width: 700px) {
   body {
-    background: #090909; }
+    background: #181818; }
     body header nav .botones li {
       margin-bottom: 0.1%; }
       body header nav .botones li .botones__nav {

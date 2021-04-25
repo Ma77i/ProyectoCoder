@@ -5,12 +5,18 @@ body {
         @include fuentex;
         font-size: 50px;
         text-transform: uppercase;
-        margin-top: 8vh;
+        margin-top: 2vh;
         z-index: -1;
+    }
+    
+    .contFoto {
+        background-color: black;
+        box-shadow: 0px 0px 10px $color-terciario2;
     }
     .titmod {
         font-family: 'kashmir-webfont', Arial, sans-serif;
         text-align: $texto-centro;
+        color: $color-secundario;
         letter-spacing: 0.3rem;
     }
 }

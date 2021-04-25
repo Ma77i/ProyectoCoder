@@ -1,6 +1,7 @@
-$color-primario: #000000;
+$color-primario: rgb(0, 0, 0);
 $color-secundario: #ffffff;
-$color-terciario: #131313da;
+$color-terciario: rgb(5, 5, 5);
+$color-terciario2: rgb(24, 24, 24);
 
 $gradiente-negro-abajo: linear-gradient(to bottom, #000000 80%, #292929 98%);
 $gradiente-negro-arriba: linear-gradient(to top, #000000 73%, #808080 100%, #000000 73%);

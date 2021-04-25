@@ -23,9 +23,11 @@ body {
 
 
 @media only screen and (max-width: 700px) {
-    .tituloFoto {
-        text-align: $texto-centro;
-        margin-top: 8vh;
+    body {
+        .tituloFoto {
+            margin-top: 8vh;
+        }
     }
+    
 
 }

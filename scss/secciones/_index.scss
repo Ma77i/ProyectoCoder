@@ -18,14 +18,14 @@
             width: 90%;
             border: 1px solid rgb(66, 66, 37);
             max-width: 100%;
-            box-shadow: 0px 0px 7px $color-secundario;
+            box-shadow: 0px 0px 5px $color-secundario;
         }
     }
     .cajaTema {
         display: $flex;
         flex-direction: column;
         position: absolute;
-        top: 73%;
+        top: 74%;
         bottom: 20%;
         left: 35%;
         right: 35%;
@@ -38,11 +38,12 @@
             font-size: 15px;
             font-style: italic;
             text-align: $texto-centro;
-            /*margin-top: 26%;*/
             
             .boton {
+                margin-top: 1.5%;
                 background-color: transparent;
-                border-radius: 20%;
+                border-radius: 8%;
+                box-shadow: 0px 0px 2px $color-secundario;
                 .cajaTema__parrafo--cancion {
                     color: $color-secundario;
                     letter-spacing: 3px;

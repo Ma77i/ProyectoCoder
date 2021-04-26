@@ -94,7 +94,6 @@ body .contenedorDiscografia {
         color: #ffffff;
         margin-bottom: 0.5vh; }
   body .contenedorDiscografia .discos:hover {
-    background-color: #181818;
     box-shadow: 0px 0px 5px #ffffff; }
 
 @media only screen and (max-width: 700px) {
@@ -139,7 +138,6 @@ body .contenedor {
     body .contenedor .contenedor__videos iframe {
       width: 100%; }
   body .contenedor .contenedor__videos:hover {
-    background-color: #181818;
     box-shadow: 0px 0px 5px #ffffff; }
 
 @media only screen and (max-width: 700px) {
@@ -187,6 +185,9 @@ form legend #estiloH2 {
   letter-spacing: 0.1rem;
   font-size: 20px;
   text-shadow: 0px 0px 9px #ffffff; }
+
+form #campo-form:hover {
+  box-shadow: 0px 0px 5px #ffffff; }
 
 @media only screen and (max-width: 700px) {
   body .tituloCont {

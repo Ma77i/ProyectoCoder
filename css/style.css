@@ -35,13 +35,20 @@
       .main .cajaTema .cajaTema__parrafo .boton {
         margin-top: 1.5%;
         background-color: transparent;
-        border-radius: 8%;
+        border-radius: 100px;
         box-shadow: 0px 0px 2px #ffffff; }
         .main .cajaTema .cajaTema__parrafo .boton .cajaTema__parrafo--cancion {
           color: #ffffff;
-          letter-spacing: 3px;
+          letter-spacing: 2px;
           font-size: 20px;
-          font-weight: lighter; }
+          font-weight: lighter;
+          margin: 1px 6px; }
+      .main .cajaTema .cajaTema__parrafo .boton:hover {
+        background-color: #090909;
+        box-shadow: 0px 0px 9px #181818; }
+        .main .cajaTema .cajaTema__parrafo .boton:hover .cajaTema__parrafo--cancion:hover {
+          letter-spacing: 1px;
+          font-size: 23px; }
 
 @media only screen and (max-width: 700px) {
   body .main .main__img .main__img--imagen {
@@ -101,7 +108,7 @@ body .contenedorDiscografia {
     text-align: center;
     margin-top: 8vh; }
   body .discos {
-    box-shadow: 0px 0px 4px #ffffff; } }
+    box-shadow: 0px 0px 4px #ffffff !important; } }
 
 body .tituloVid {
   font-family: 'kashmir-webfont', Arial, sans-serif;

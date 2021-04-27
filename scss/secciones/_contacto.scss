@@ -64,12 +64,8 @@ form {
                 margin: auto;
                 width: ($ancho-max)-10;
                 padding: 0.5% 5% 2% 5%;
+                box-shadow: 0px 0px 5px $color-secundario;
             }
         }
     }
-}
-
-@media only screen and (max-width: 700px) {
-
-
 }
